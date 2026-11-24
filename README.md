@@ -24,7 +24,7 @@ This repository contains two data analysis projects completed as part of PLP Dat
 ### Deliverables
 - `generate_data.py` – Generates the sales dataset.
 - `duka_sales_exploration.ipynb` – Exploratory analysis and business insights.
-- `excel/duka_branch_summary.xlsx` – Excel workbook with three sheets.
+- `excel/duka_branch_summary.xlsx` – Excel workbook containing sales data, formula-driven branch summaries using SUMIFS and XLOOKUP, and a native PivotTable.
 - `outputs/premium_online_coast_capital.csv` – Filtered premium online sales for Nairobi and Mombasa.
 
 ## Project 2: Agent Transaction Data Cleaning
@@ -93,9 +93,9 @@ Open `duka_sales_exploration.ipynb` in Google Colab or Jupyter Notebook and exec
 
 ### Agent Transaction Cleaning
 
-Open `agent_cleanup.ipynb` in Google Colab or Jupyter Notebook.
+Open `agent_cleanup.ipynb` in Google Colab or Jupyter Notebook and execute all cells in order.
 
-The original agent input datasets (`agents.csv` and `agent_transactions.csv`) are not included in this repository. They must be supplied locally to reproduce the cleaning workflow.
+The notebook automatically generates the sample agent and transaction datasets using a fixed random seed, creates the reusable `cleaning_pipeline.py` module, performs the cleaning and analysis, and exports the cleaned transaction CSV.
 
 ## Data Integrity and Privacy
 
